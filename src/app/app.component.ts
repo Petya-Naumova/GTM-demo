@@ -22,9 +22,9 @@ export class AppComponent {
             pagePath : this.pagePath || '/signup',
             pageTitle : this.pageTitle || 'Signup page'
           });
+          console.log('dataLayer: ', dataLayer);
         }
       }
-      console.log('dataLayer: ', dataLayer);
     });
   }
 
