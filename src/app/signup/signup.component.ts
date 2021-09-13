@@ -16,12 +16,12 @@ export class SignupComponent implements OnInit {
       const dataLayer = (window as any).dataLayer;
       if (event instanceof NavigationEnd && event?.url === '/signup') {
         if (typeof dataLayer !== undefined) {
-          (window as any).dataLayer.push({
-            event : 'pageview',
-            pagePath : this.pagePath || '/signup',
-            pageTitle : this.pageTitle || 'Signup page'
-          });
-          console.log('dataLayer: ', dataLayer);
+          // (window as any).dataLayer.push({
+          //   event : 'pageview',
+          //   pagePath : this.pagePath || '/signup',
+          //   pageTitle : this.pageTitle || 'Signup page'
+          // });
+          // console.log('dataLayer: ', dataLayer);
         }
       }
     });
